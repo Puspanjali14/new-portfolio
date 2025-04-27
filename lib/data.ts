@@ -2,8 +2,10 @@ import React from "react";
 import { CgWorkAlt } from "react-icons/cg";
 import { FaReact } from "react-icons/fa";
 import { LuGraduationCap } from "react-icons/lu";
-import corpcommentImg from "@/public/corpcomment.png";
-import rmtdevImg from "@/public/rmtdev.png";
+import resumeScreening from "@/public/resume-screening.png";
+import restaurant from "@/public/restaurant.jpg";
+
+import ecommerce from "@/public/ecommerce.jpg";
 import wordanalyticsImg from "@/public/wordanalytics.png";
 
 export const links = [
@@ -35,23 +37,28 @@ export const projectsData = [
   {
     title: "Resume Screening",
     description:
-      "My final year project where I created beautiful looking website..",
+    
+    "Web app using NLP/NER to extract resume data & kNN to rank candidates, speeding up hiring ",
     tags: ["Html","Css","Javascript", "Flask", "Mysql"],
-    imageUrl: corpcommentImg,
+       imageUrl: resumeScreening,
+       link: "https://github.com/puspanjali123/resume-screening",
   },
   {
-    title: "rmtDev",
+    title: "Ecommerce ",
     description:
-      "Job board for remote developer jobs. I was the front-end developer. It has features like filtering, sorting and pagination.",
-    tags: ["React", "TypeScript", "Next.js", "Tailwind", "Redux"],
-    imageUrl: rmtdevImg,
+      "React e-commerce site  with product browsing, cart management, and secure checkout.",
+    tags: ["HTML", "CSS", "Javascript", "React"],
+    imageUrl:ecommerce,
+    link: "https://github.com/puspanjali123/resume-screening",
+
   },
   {
-    title: "Word Analytics",
+    title: "Restaurant Menu App",
     description:
-      "A public web app for quick analytics on text. It shows word count, character count and social media post limits.",
-    tags: ["React", "Next.js", "SQL", "Tailwind", "Framer"],
-    imageUrl: wordanalyticsImg,
+      "Responsive restaurant menu app (HTML/Tailwind/JS) for easy browsing and item filtering.",
+    tags: ["HTML", "Tailwind CSS", "Javascript"],
+    imageUrl: restaurant  ,
+    link: "https://resturantmenuuuuuu.netlify.app/"
   },
 ] as const;
 
@@ -64,5 +71,7 @@ export const skillsData = [
   "Tailwind",
   "Github",
   "ContextApi",
+  "Figma",
+  
   ,
 ] as const;
